@@ -1,0 +1,13 @@
+<h1>Store 등록정보 다불러오기</h1>
+{% for s in sample %}
+<li>{{ s }}</li>
+{%endfor%}
+<hr>
+{% for k in sample %}
+<li>{{ k.biz_url }}</li>
+{%endfor%}
+
+<h1>url = test.biz_url 에서 url 불러오기</h1>
+{% for u in url %}
+<li>{{ u }}</li>
+{%endfor%}

@@ -1,0 +1,12 @@
+인덱스페이지
+
+
+<h1>모든리뷰 호출</h1>
+{% for x in allreview %}
+    <ul><li>{{x}}</li></ul>
+    
+{%endfor %}
+
+<h2>특정가게리뷰 호출</h2>
+<p>{{jcaron_review}}</p>
+<p style="color:red">가게명(fk)으로 호출하는방법 모르겠다 </p>

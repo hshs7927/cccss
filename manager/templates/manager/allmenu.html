@@ -1,0 +1,54 @@
+
+<h1>마카롱데이터 전체</h1>
+{% for m in macaron %}
+<li>{{ m }}</li>
+{%endfor%}
+
+<hr>
+<p>1 macaronjcaron</p>
+{{macaronjcaron}}
+<br>
+
+
+<hr>
+<p> 2 store </p>
+<p>{{store.user}}</p>
+<p>{{store.biz_name}}</p>
+<p>{{store.biz_num}}</p>
+<p>{{store.biz_url}}</p>
+<p>{{store.biz_insta}}</p>
+<p>{{store.biz_address}}</p>
+<p>{{store.biz_tel}}</p>
+
+<hr>
+<h1>Store_set 모델 정상적으로 생성되었을까? </h1>
+{% for s in store_setup %}
+<li>{{ s }}</li>
+{%endfor%}
+
+<hr>
+<h1>오늘의 라인업 세팅값</h1>
+{% for lineup in lineups %}
+<li>{{ lineup.store.biz_name }}</li>
+<li>{{ lineup.item }}</li>
+<li>{{ lineup.set_day }}</li>
+<li>{{ lineup.quota }}</li>
+{%endfor%}
+<hr>
+
+<h2>제이카롱의 마카롱리스트</h2>
+{% for a in macaronjcaron %}
+<li>{{ a }}</li>
+{%endfor%}
+
+
+<h1>포장방법</h1>
+{% for p in package %}
+<li>{{ p }}</li>
+{%endfor%}
+
+<h1>리뷰모음 데이터 모두 불러오기</h1>
+{% for rv in review_all %}
+<li>{{ rv }}</li>
+{%endfor%}
+<p style="color:red"> 이 페이지에서는 매장별 전체메뉴(DB)가 나와야됨 </p>
